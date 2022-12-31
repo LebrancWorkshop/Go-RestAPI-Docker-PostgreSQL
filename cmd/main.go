@@ -5,7 +5,7 @@ import (
 )
 
 func getIndex(c *fiber.Ctx) error {
-	return c.SendString("Test API."); 
+	return c.SendString("Test API.");   
 }
 
 func main() {
