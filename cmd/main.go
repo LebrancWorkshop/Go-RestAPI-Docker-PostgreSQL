@@ -12,6 +12,6 @@ func getIndex(c *fiber.Ctx) error {
 func main() {
 	database.ConnectDb(); 
 	app := fiber.New();
-	app.Get("/", getIndex);
+	setupRoutes(app); 
 	app.Listen(":8000");
 }
